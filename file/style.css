@@ -1,3 +1,31 @@
+.projectOver, .step1Title, .step2Title, .step3Title, .step4Title, .step5Title, .step6Title {
+    color: #bec0c2;
+    position: relative;
+    margin: 15px 5px;
+    width: max-content;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+}
+.projectOver:hover, .step1Title:hover, .step2Title:hover, .step3Title:hover, .step4Title:hover,
+.step5Title:hover, .step6Title:hover {
+    color: #dedfe0;
+}
+.projectOver::before, .step1Title::before, .step2Title::before, .step3Title::before,
+.step4Title::before, .step5Title::before, .step6Title::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #bec0c2;
+}
+.projectOver:hover::before, .step1Title:hover::before, .step2Title:hover::before, .step3Title:hover::before,
+.step4Title:hover::before, .step5Title:hover::before, .step6Title:hover::before {
+    width: 100%;
+    transition: all .5s;
+}
 .overview{
     margin: 10px 20px;
     border: 2px solid #747474;
